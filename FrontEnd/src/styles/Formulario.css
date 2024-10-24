@@ -1,0 +1,360 @@
+/* Contenedor general */
+.form-container {
+    max-width: 850px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 30px; /* Espaciado interno del contenedor */
+    background-color: #e9dfda; /* Color de fondo del contenedor */
+    border-radius: 20px; /* Redondeo de las esquinas del contenedor */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+    position: relative; /* Posición relativa para elementos absolutos */
+}
+
+/* Título principal dividido en tres líneas */
+.title-container {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px; /* Margen inferior del contenedor del título */
+    position: relative; /* Posición relativa para elementos absolutos */
+}
+
+.title-container h1 {
+    font-size: 100px; /* Tamaño de la fuente del título principal */
+    font-weight: bold; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin: 15px 0; /* Margen superior e inferior */
+    font-family: "Nexa Black"; /* Familia tipográfica */
+}
+
+/* Título principal dividido en tres líneas */
+.title-container {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 30px; /* Margen inferior del contenedor del título */
+    position: relative; /* Posición relativa para elementos absolutos */
+    padding-left: 20px; /* Añade padding a la izquierda para separarlo del borde del contenedor */
+}
+
+.title-container h1 {
+    font-size: 100px; /* Tamaño de la fuente del título principal */
+    font-weight: bold; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin: 15px 0; /* Margen superior e inferior */
+    font-family: "Nexa Black"; /* Familia tipográfica */
+}
+
+.title-container .material {
+    font-size: 100px; /* Tamaño de la fuente del subtítulo 'material' */
+    font-weight: 700; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+    font-family: "Nexa Black"; /* Familia tipográfica */
+}
+
+.title-container .audiovisual {
+    position: relative; /* Posición relativa para elementos absolutos */
+    font-size: 100px; /* Tamaño de la fuente del subtítulo 'audiovisual' */
+    font-weight: bold; /* Peso de la fuente */
+    font-family: "Nexa Black"; /* Familia tipográfica */
+    color: #2c2c2c; /* Color del texto */
+    margin: 20px 0; /* Margen superior e inferior */
+    line-height: 1.2; /* Altura de línea */
+    z-index: 2; /* Z-index para asegurar que el texto esté encima */
+}
+
+.title-container .audiovisual::before {
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posición absoluta respecto al contenedor padre */
+    bottom: 0; /* Posición en la parte inferior */
+    left: 50%; /* Posición horizontal centrada respecto al contenedor padre */
+    transform: translateX(-50%); /* Centra el pseudo-elemento horizontalmente */
+    width: 100%; /* Ancho del pseudo-elemento */
+    height: 50%; /* Alto del pseudo-elemento */
+    background-color: #ddbd99; /* Color de fondo del pseudo-elemento */
+    z-index: -1; /* Z-index para situar el pseudo-elemento detrás del texto */
+}
+/* Estilo para los títulos de las secciones */
+.section-title-ministerio h2,
+.section-title-solicitud h2,
+.section-title-fecha h2{
+    font-size: 22px; /* Tamaño de la fuente de los títulos de sección ajustado */
+    font-weight: bold; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin-bottom: 15px; /* Margen inferior del título de sección */
+    font-family: "DejaVu Sans"; /* Familia tipográfica */
+    background-color: #ddbd99; /* Color de fondo del título de sección */
+    padding: 10px; /* Espaciado interno del título de sección */
+    display: inline-block; /* Permite que el fondo se ajuste al tamaño del texto */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+
+/* Título de sección con salto de línea */
+.section-title-info h2 {
+    font-size: 30px; /* Tamaño de la fuente del título de sección ajustado */
+    font-weight: bold; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin-bottom: 15px; /* Margen inferior del título de sección */
+    font-family: "DejaVu Sans"; /* Familia tipográfica */
+    background-color: #ddbd99; /* Color de fondo del título de sección */
+    padding: 15px; /* Espaciado interno del título de sección */
+    display: inline-block; /* Permite que el fondo se ajuste al tamaño del texto */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    white-space: pre-line; /* Permite el salto de línea en el texto */
+}
+
+/* Ajustes para la sombra del título principal y subtítulos */
+.title-container h1,
+.title-container .material,
+.title-container .audiovisual {
+    font-size: 100px; /* Tamaño de la fuente para el título principal y subtítulos ajustado */
+    font-weight: bold; /* Peso de la fuente */
+    color: #2c2c2c; /* Color del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+    font-family: "Nexa Black"; /* Familia tipográfica */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra más sutil para los títulos */
+}
+
+/* Contenedor de los campos del formulario */
+.form-group {
+    margin-bottom: 20px; /* Margen inferior del contenedor de campos */
+    display: flex; /* Utiliza flexbox para el contenedor de campos */
+    flex-direction: column; /* Direcciona los elementos en una columna */
+    width: 100%; /* Ancho del contenedor de campos */
+}
+
+/* Estilo específico para el campo 'Elegir' */
+.form-group .select-elegir {
+    border-radius: 5px; /* Redondea ligeramente las esquinas del campo */
+    width: 30%; /* Ajusta el ancho para hacerlo más pequeño */
+    padding: 8px; /* Ajusta el padding para un tamaño adecuado */
+    font-size: 14px; /* Tamaño de la fuente del campo 'Elegir' */
+    margin: 0; /* Elimina el margen para que esté alineado a la izquierda */
+    display: block; /* Asegura que el campo ocupe toda la línea disponible */
+    border: 1px solid #ccc; /* Borde del campo */
+    box-shadow: none; /* Elimina la sombra */ 
+}
+
+
+
+
+/* Estilo específico para el campo 'Correo Relacionado' */
+.form-group .correo-relacionado {
+    border-radius: 15px; /* Redondea las esquinas del campo 'Correo Relacionado' */
+    width: 20%; /* Ajusta el ancho para hacerlo un poco más largo que 'Elegir' */
+    font-size: 16px; /* Tamaño de la fuente del campo 'Correo Relacionado' */
+}
+
+/* Estilo específico para campos de Imagen y Video */
+.form-group .campo-imagen-video {
+    border-radius: 15px; /* Redondea las esquinas de los campos de imagen y video */
+    width: 100%; /* Aumenta el tamaño del campo para imágenes y videos */
+    padding: 20px; /* Ajusta el padding para un tamaño adecuado */
+    font-size: 16px; /* Tamaño de la fuente del campo de imagen y video */
+}
+
+/* Estilo del área de texto para fecha */
+.form-group .campo-fecha {
+    border-radius: 20px; /* Aumenta el redondeo de las esquinas del campo de fecha */
+    padding: 15px; /* Ajusta el padding para un tamaño adecuado */
+    font-size: 30px; /* Tamaño de la fuente del campo de fecha */
+    width: 100%; /* Ancho completo del campo de fecha */
+}
+
+input[type="date" i] {
+    
+    border-radius: 15px; /* Aumenta el redondeo de las esquinas del campo de fecha */
+    padding: 15px; /* Ajusta el padding para un tamaño adecuado */
+    font-size: 15px; /* Tamaño de la fuente del campo de fecha */
+    width: 17%; /* Ancho completo del campo de fecha */
+    border: 3px solid #707070;
+    font-family: "DejaVu Sans";
+}
+
+/* Otros estilos generales para el formulario */
+.form-group label {
+    display: block; /* Asegura que las etiquetas se muestren en bloques */
+    margin-bottom: 8px; /* Margen inferior de las etiquetas */
+    font-weight: bold; /* Peso de la fuente de las etiquetas */
+    font-size: 23px; /* Tamaño de la fuente de las etiquetas */
+}
+
+
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 65%; /* Ancho completo de los campos */
+    padding: 11px; /* Espaciado interno de los campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 20px; /* Redondeo de las esquinas de los campos */
+    font-size: 20px; /* Tamaño de la fuente de los campos */
+    margin-bottom: 10px; /* Margen inferior de los campos */
+}
+
+.form-group select {
+    border-radius: 20px; /* Aplica el redondeo también a los campos de selección */
+}
+
+/* Estilo específico para el campo 'Ministerio' */
+.section-title-ministerio select {
+    border-radius: 40px; /* Ajusta el borde del select para ser semi-circular */
+    width: 20%; /* Ajusta el ancho para hacerlo más pequeño */
+    padding: 10px; /* Ajusta el padding para un tamaño adecuado */
+    font-family: "DejaVu Sans";
+}
+
+/* Estilo del área de texto */
+.form-group textarea {
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+    height: 150px; /* Ajusta la altura del área de texto */
+    width: 100%; /* Ancho completo del área de texto */
+    border: 3px solid #282828; /* Borde del área de texto */
+    padding: 10px; /* Ajusta el padding para un tamaño adecuado */
+    font-size: 16px; /* Tamaño de la fuente del área de texto */
+    font-family: "DejaVu Sans"; /* Familia tipográfica */
+}
+
+/* Estilo del botón */
+.form-group button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde para el botón */
+    padding: 12px 18px; /* Espaciado interno del botón */
+    border-radius: 20px; /* Redondeo de las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    display: block; /* Asegura que el botón ocupe toda la línea disponible */
+    margin: 20px auto; /* Margen superior e inferior para centrar el botón */
+}
+
+.form-group button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .form-container {
+        padding: 20px; /* Ajusta el padding del contenedor para pantallas medianas */
+    }
+
+    .title-container h1,
+    .title-container .material,
+    .title-container .audiovisual {
+        font-size: 50px; /* Tamaño de la fuente para títulos en pantallas medianas */
+    }
+
+    .section-title-ministerio h2,
+    .section-title-solicitud h2,
+    .section-title-fecha h2,
+    .section-title-info h2 {
+        font-size: 28px; /* Tamaño de la fuente para títulos de sección en pantallas medianas */
+        padding: 10px; /* Ajusta el padding de los títulos de sección */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px; /* Tamaño de la fuente de los campos en pantallas medianas */
+        padding: 10px; /* Ajusta el padding de los campos */
+    }
+
+    .form-group button {
+        font-size: 16px; /* Tamaño de la fuente del botón en pantallas medianas */
+        padding: 10px 15px; /* Ajusta el padding del botón */
+    }
+}
+
+/* Media queries para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px; /* Ajusta el padding del contenedor para pantallas pequeñas */
+    }
+
+    .title-container h1,
+    .title-container .material,
+    .title-container .audiovisual {
+        font-size: 40px; /* Tamaño de la fuente para títulos en pantallas pequeñas */
+    }
+
+    .section-title-ministerio h2,
+    .section-title-solicitud h2,
+    .section-title-fecha h2,
+    .section-title-info h2 {
+        font-size: 24px; /* Tamaño de la fuente para títulos de sección en pantallas pequeñas */
+        padding: 8px; /* Ajusta el padding de los títulos de sección */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        font-size: 12px; /* Tamaño de la fuente de los campos en pantallas pequeñas */
+        padding: 8px; /* Ajusta el padding de los campos */
+    }
+
+    .form-group textarea {
+        height: 80px; /* Ajusta la altura del área de texto en pantallas pequeñas */
+    }
+
+    .form-group button {
+        font-size: 14px; /* Tamaño de la fuente del botón en pantallas pequeñas */
+        padding: 8px 12px; /* Ajusta el padding del botón */
+    }
+}
+
+/* Media queries para pantallas extra pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+    .title-container h1,
+    .title-container .material,
+    .title-container .audiovisual {
+        font-size: 30px; /* Tamaño de la fuente para títulos en pantallas extra pequeñas */
+    }
+
+    .section-title-ministerio h2,
+    .section-title-solicitud h2,
+    .section-title-fecha h2,
+    .section-title-info h2 {
+        font-size: 20px; /* Tamaño de la fuente para títulos de sección en pantallas extra pequeñas */
+        padding: 6px; /* Ajusta el padding de los títulos de sección */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        font-size: 10px; /* Tamaño de la fuente de los campos en pantallas extra pequeñas */
+        padding: 6px; /* Ajusta el padding de los campos */
+    }
+
+    .form-group textarea {
+        height: 60px; /* Ajusta la altura del área de texto en pantallas extra pequeñas */
+    }
+
+    .form-group button {
+        font-size: 12px; /* Tamaño de la fuente del botón en pantallas extra pequeñas */
+        padding: 6px 10px; /* Ajusta el padding del botón */
+    }
+}
+
+/* Estilo para el logo en pantallas grandes */
+.logo-container {
+    position: absolute; /* Posición absoluta respecto al contenedor padre */
+    bottom: 25px; /* Posición en la parte inferior */
+    left: 20px; /* Posición a la izquierda */
+}
+
+.logo-container img {
+    width: 200px; /* Ancho del logo en pantallas grandes */
+    height: 100px; /* Mantiene la proporción del logo */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo-container {
+        position: static; /* Cambia la posición a estática en pantallas más pequeñas */
+        margin: 20px 0; /* Ajusta el margen del logo */
+        text-align: left; /* Alinea el logo a la izquierda */
+    }
+
+    .logo-container img {
+        width: 100px; /* Ancho del logo en pantallas más pequeñas */
+        height: auto; /* Mantiene la proporción del logo */
+    }
+}
